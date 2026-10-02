@@ -374,3 +374,15 @@ results = pd.DataFrame({
 
 results
 
+// added by adulrahman laptop
+import matplotlib.pyplot as plt
+
+metrics = ['Accuracy', 'Precision', 'Recall', 'F1 Score', 'ROC-AUC']
+
+results.set_index('Model')[metrics].plot(kind='bar')
+
+plt.title("Model Comparison")
+plt.ylabel("Score")
+plt.xticks(rotation=0)
+plt.tight_layout()
+plt.show()
